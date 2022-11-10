@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Advanced Designs</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="assets/css/reset.css" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+	<!-- Header -->
+	<header id="header">
+		<a href="index.html" class="logo"><strong>Positioning</strong> by Ampli</a>
+	</header>
+
+	<!-- Banner -->
+	<section id="banner">
+		<div class="inner">
+			<h1>Это шаблон сайта, на котором мы изучим позиционирование</h1>
+			<ul class="actions">
+				<li>
+					<a href="#one" class="button alt scrolly big">Листай дальше</a>
+				</li>
+			</ul>
+		</div>
+	</section>
+
+	<!-- One -->
+	<article id="one" class="post style1">
+		<div class="image">
+			<img src="images/pic14.jpg" />
+		</div>
+		<div class="content">
+			<div class="inner">
+				<header>
+					<h2><a>Статья первая: Positioning</a></h2>
+					<p class="info">Today by <a href="#">Arick</a></p>
+				</header>
+				<p>
+					Свойство position позволяет точно задать новое местоположение блока
+					относительно того места, где он находился бы в нормальном потоке
+					документа. По умолчанию все элементы располагаются последовательно
+					один за другим в том порядке, в котором они определены в структуре
+					HTML-документа. Свойство не наследуется.
+				</p>
+				<ul class="actions">
+					<li>
+						<a href="https://html5book.ru/css-position/" class="button alt">Читать дальше</a>
+					</li>
+				</ul>
+			</div>
+			<div class="postnav">
+				<a href="#" class="prev disabled"><span class="icon fa-chevron-up"></span></a>
+				<a href="#two" class="scrolly next"><span class="icon fa-chevron-down"></span></a>
+			</div>
+		</div>
+	</article>
+
+	<!-- Two -->
+	<article id="two" class="post invert style1 alt">
+		<div class="image">
+			<img src="images/pic13.jpg" alt="" data-position="10% center" />
+		</div>
+		<div class="content">
+			<div class="inner">
+				<header>
+					<h2><a href="generic.html">Статья вторая: Fixed</a></h2>
+					<p class="info">Tomorrow by <a href="#">Arick</a></p>
+				</header>
+				<p>
+					Фиксирует элемент в указанном месте страницы. Блоком-контейнером
+					фиксированного элемента является окно просмотра, то есть элемент
+					всегда фиксируется относительно окна браузера и не меняет своего
+					положения во время прокрутки страницы. Сам элемент при этом
+					полностью удаляется из основного потока документа и создаётся в
+					новом потоке документа.
+				</p>
+				<ul class="actions">
+					<li>
+						<a href="https://html5book.ru/css-position/" class="button alt">Читать дальше</a>
+					</li>
+				</ul>
+			</div>
+			<div class="postnav">
+				<a href="#one" class="scrolly prev"><span class="icon fa-chevron-up"></span></a>
+				<a href="#three" class="scrolly next"><span class="icon fa-chevron-down"></span></a>
+			</div>
+		</div>
+	</article>
+
+	<!-- Three -->
+	<article id="three" class="post style2">
+		<div class="image image-relative">
+			<img src="images/pic12.jpg" alt="" data-position="80% center" />
+			<div class="overlay">
+				<h2>А я абсолютный!</h2>
+			</div>
+		</div>
+		<div class="content">
+			<div class="inner">
+				<header>
+					<h2><a href="generic.html">Статья тертья: absolute</a></h2>
+					<p class="info">Today by <a href="#">Arick</a></p>
+				</header>
+				<p>
+					Абсолютно позиционированный элемент полностью удаляется из потока
+					документа и позиционируется относительно границ его блока-контейнера
+					(другого элемента или окна браузера). Блок-контейнер для абсолютно
+					позиционированного элемента — ближайший элемент-предок, значение
+					свойства position которого не равно static. Местоположение краёв
+					элемента определяется с помощью свойств смещения. Пространство,
+					которое занимал такой элемент, схлопывается, как будто элемента не
+					существовало на странице. Абсолютно позиционированный элемент может
+					перекрывать другие элементы или быть перекрытым ими (за счёт
+					свойства z-index). Любой абсолютно позиционированный элемент
+					генерирует блок, то есть принимает значение display: block;.
+				</p>
+				<ul class="actions">
+					<li>
+						<a href="https://html5book.ru/css-position/" class="button alt">Читать дальше</a>
+					</li>
+				</ul>
+			</div>
+			<div class="postnav">
+				<a href="#two" class="scrolly prev"><span class="icon fa-chevron-up"></span></a>
+				<a href="#four" class="scrolly next"><span class="icon fa-chevron-down"></span></a>
+			</div>
+		</div>
+	</article>
+
+	<!-- Four -->
+	<article id="four" class="post invert style2 alt">
+		<div class="image">
+			<img src="images/pic14.jpg" alt="" data-position="60% center" />
+		</div>
+		<div class="content">
+			<div class="inner">
+				<header>
+					<h2><a href="generic.html">Статья четвертая: relative</a></h2>
+					<p class="info">Today by <a href="#">Arick</a></p>
+				</header>
+				<p>
+					Относительно позиционированный элемент сдвигается со своего обычного
+					места в разных направлениях относительно границ родительского
+					контейнера, а пространство, которое он занимал, не исчезает. При
+					этом такой элемент может перекрывать другое содержимое на странице.
+					Если для относительно позиционированного элемента одновременно
+					задать свойства top и bottom или left и right, то в первом случае
+					сработает только top, во втором — left. Относительное
+					позиционирование позволяет задавать z-index для элемента, а также
+					абсолютно позиционировать дочерние элементы внутри блока.
+				</p>
+				<ul class="actions">
+					<li>
+						<a href="https://html5book.ru/css-position/" class="button alt">Читать дальше</a>
+					</li>
+				</ul>
+			</div>
+			<div class="postnav">
+				<a href="#three" class="scrolly prev"><span class="icon fa-chevron-up"></span></a>
+				<a href="#five" class="scrolly next"><span class="icon fa-chevron-down"></span></a>
+			</div>
+		</div>
+	</article>
+
+	<!-- Footer -->
+	<footer id="footer">
+		<ul class="icons">
+			<li>
+				<a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a>
+			</li>
+			<li>
+				<a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a>
+			</li>
+			<li>
+				<a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a>
+			</li>
+		</ul>
+	</footer>
+</body>
+
+</html>

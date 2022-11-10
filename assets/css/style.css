@@ -1,0 +1,34 @@
+#header {
+    position: fixed;
+}
+
+#banner {
+    margin-top: 68px;
+}
+
+.image-relative {
+    position: relative;
+}
+
+.image-relative:hover .overlay {
+    display: flex;
+}
+
+.overlay {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.overlay h2 {
+    text-align: center;
+    color: #fff !important;
+}
